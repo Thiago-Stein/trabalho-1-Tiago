@@ -1,0 +1,46 @@
+{
+  "info": {
+    "_postman_id": "af7f832e-3d3c-4306-9b67-9661cfc23aa3",
+    "name": "FilmesTrabalhoTiago",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52842231",
+    "_collection_link": "https://go.postman.co/collection/52842231-af7f832e-3d3c-4306-9b67-9661cfc23aa3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://172.20.10.2:3000/api/filmes",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"tempoEmMinutos\": 93 \n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
