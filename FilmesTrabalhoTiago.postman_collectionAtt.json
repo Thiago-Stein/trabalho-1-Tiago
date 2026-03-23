@@ -1,0 +1,392 @@
+{
+  "info": {
+    "_postman_id": "af7f832e-3d3c-4306-9b67-9661cfc23aa3",
+    "name": "FilmesTrabalhoTiago",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52842231",
+    "_collection_link": "https://go.postman.co/collection/52842231-af7f832e-3d3c-4306-9b67-9661cfc23aa3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://172.20.10.2:3000/api/filmes/9",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes/9",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes",
+            "9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://172.20.10.2:3000/api/filmes/9",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\" : \"Sinners\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes/9",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes",
+            "9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://172.20.10.2:3000/api/filmes",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"Pecadores\",\n    \"tempoEmMinutos\": 137,\n    \"genero\": \"Terror\",\n    \"classificacaoIndicativa\": 16\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://172.20.10.2:3000/api/filmes",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"Hércules\",\n    \"tempoEmMinutos\": 93,\n    \"genero\": \"Animação / Aventura\",\n    \"classificacaoIndicativa\": 0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://172.20.10.2:3000/api/filmes",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"Madagascar\",\n    \"tempoEmMinutos\": 86,\n    \"genero\": \"Animação\",\n    \"classificacaoIndicativa\": 0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://172.20.10.2:3000/api/filmes",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"Garota Exemplar\",\n    \"tempoEmMinutos\": 149,\n    \"genero\": \"Suspense\",\n    \"classificacaoIndicativa\": 14\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://172.20.10.2:3000/api/filmes",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"A viagem de Chihiro\",\n    \"tempoEmMinutos\": 124,\n    \"genero\": \"Animação / Fantasia\",\n    \"classificacaoIndicativa\": 0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://172.20.10.2:3000/api/filmes/?ordem=nome",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes/?ordem=nome",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes",
+            ""
+          ],
+          "query": [
+            {
+              "key": "ordem",
+              "value": "nome"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://172.20.10.2:3000/api/filmes/?genero=Terror",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes/?genero=Terror",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes",
+            ""
+          ],
+          "query": [
+            {
+              "key": "genero",
+              "value": "Terror"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://172.20.10.2:3000/api/filmes/4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes/4",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://172.20.10.2:3000/api/filmes",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"tempoEmMinutos\": 93 \n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
