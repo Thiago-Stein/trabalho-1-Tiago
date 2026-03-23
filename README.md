@@ -1,3 +1,5 @@
+Autor/Aluno : Thiago Gomes Stein
+
 #API de armazenar filmes
 
 Endpoints:
