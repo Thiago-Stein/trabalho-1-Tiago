@@ -8,21 +8,35 @@
   },
   "item": [
     {
-      "name": "http://172.20.10.2:3000/api/filmes/9",
+      "name": "ListaCompletaInicial",
       "request": {
-        "method": "DELETE",
+        "method": "GET",
         "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
         "url": {
-          "raw": "http://172.20.10.2:3000/api/filmes/9",
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TestePesquisaPorGenero",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes/?genero=Terror",
           "protocol": "http",
           "host": [
             "172",
@@ -34,28 +48,25 @@
           "path": [
             "api",
             "filmes",
-            "9"
+            ""
+          ],
+          "query": [
+            {
+              "key": "genero",
+              "value": "Terror"
+            }
           ]
         }
       },
       "response": []
     },
     {
-      "name": "http://172.20.10.2:3000/api/filmes/9",
+      "name": "TesteOrdenarPorNome",
       "request": {
-        "method": "PUT",
+        "method": "GET",
         "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"nome\" : \"Sinners\"\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
         "url": {
-          "raw": "http://172.20.10.2:3000/api/filmes/9",
+          "raw": "http://172.20.10.2:3000/api/filmes/?ordem=nome",
           "protocol": "http",
           "host": [
             "172",
@@ -67,142 +78,33 @@
           "path": [
             "api",
             "filmes",
-            "9"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://172.20.10.2:3000/api/filmes",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"nome\": \"Pecadores\",\n    \"tempoEmMinutos\": 137,\n    \"genero\": \"Terror\",\n    \"classificacaoIndicativa\": 16\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "http://172.20.10.2:3000/api/filmes",
-          "protocol": "http",
-          "host": [
-            "172",
-            "20",
-            "10",
-            "2"
+            ""
           ],
-          "port": "3000",
-          "path": [
-            "api",
-            "filmes"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://172.20.10.2:3000/api/filmes",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"nome\": \"Hércules\",\n    \"tempoEmMinutos\": 93,\n    \"genero\": \"Animação / Aventura\",\n    \"classificacaoIndicativa\": 0\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+          "query": [
+            {
+              "key": "ordem",
+              "value": "nome"
             }
-          }
-        },
-        "url": {
-          "raw": "http://172.20.10.2:3000/api/filmes",
-          "protocol": "http",
-          "host": [
-            "172",
-            "20",
-            "10",
-            "2"
-          ],
-          "port": "3000",
-          "path": [
-            "api",
-            "filmes"
           ]
         }
       },
       "response": []
     },
     {
-      "name": "http://172.20.10.2:3000/api/filmes",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"nome\": \"Madagascar\",\n    \"tempoEmMinutos\": 86,\n    \"genero\": \"Animação\",\n    \"classificacaoIndicativa\": 0\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
+      "name": "testePost1",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
           }
-        },
-        "url": {
-          "raw": "http://172.20.10.2:3000/api/filmes",
-          "protocol": "http",
-          "host": [
-            "172",
-            "20",
-            "10",
-            "2"
-          ],
-          "port": "3000",
-          "path": [
-            "api",
-            "filmes"
-          ]
         }
-      },
-      "response": []
-    },
-    {
-      "name": "http://172.20.10.2:3000/api/filmes",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"nome\": \"Garota Exemplar\",\n    \"tempoEmMinutos\": 149,\n    \"genero\": \"Suspense\",\n    \"classificacaoIndicativa\": 14\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "http://172.20.10.2:3000/api/filmes",
-          "protocol": "http",
-          "host": [
-            "172",
-            "20",
-            "10",
-            "2"
-          ],
-          "port": "3000",
-          "path": [
-            "api",
-            "filmes"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://172.20.10.2:3000/api/filmes",
+      ],
       "request": {
         "method": "POST",
         "header": [],
@@ -234,16 +136,13 @@
       "response": []
     },
     {
-      "name": "http://172.20.10.2:3000/api/filmes/?ordem=nome",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
+      "name": "testePost2",
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "",
+          "raw": "{\n    \"nome\": \"Garota Exemplar\",\n    \"tempoEmMinutos\": 149,\n    \"genero\": \"Suspense\",\n    \"classificacaoIndicativa\": 14\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -251,7 +150,135 @@
           }
         },
         "url": {
-          "raw": "http://172.20.10.2:3000/api/filmes/?ordem=nome",
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "testePost3",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"Hércules\",\n    \"tempoEmMinutos\": 93,\n    \"genero\": \"Animação\",\n    \"classificacaoIndicativa\": 0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "testePost4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"Madagascar\",\n    \"tempoEmMinutos\": 86,\n    \"genero\": \"Animação\",\n    \"classificacaoIndicativa\": 0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "testePost5",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"Sinners\",\n    \"tempoEmMinutos\": 137,\n    \"genero\": \"Terror\",\n    \"classificacaoIndicativa\": 16\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes",
+          "protocol": "http",
+          "host": [
+            "172",
+            "20",
+            "10",
+            "2"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "filmes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "testePut",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"Pecadores\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://172.20.10.2:3000/api/filmes/9",
           "protocol": "http",
           "host": [
             "172",
@@ -263,37 +290,23 @@
           "path": [
             "api",
             "filmes",
-            ""
-          ],
-          "query": [
-            {
-              "key": "ordem",
-              "value": "nome"
-            }
+            "9"
           ]
         }
       },
       "response": []
     },
     {
-      "name": "http://172.20.10.2:3000/api/filmes/?genero=Terror",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
+      "name": "testeDelete",
       "request": {
-        "method": "GET",
+        "method": "DELETE",
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
+          "raw": "{\n    \"nome\": \"Hércules\",\n    \"tempoEmMinutos\": 93,\n    \"genero\": \"Animação\",\n    \"classificacaoIndicativa\": 0\n}"
         },
         "url": {
-          "raw": "http://172.20.10.2:3000/api/filmes/?genero=Terror",
+          "raw": "http://172.20.10.2:3000/api/filmes/9",
           "protocol": "http",
           "host": [
             "172",
@@ -305,20 +318,14 @@
           "path": [
             "api",
             "filmes",
-            ""
-          ],
-          "query": [
-            {
-              "key": "genero",
-              "value": "Terror"
-            }
+            "9"
           ]
         }
       },
       "response": []
     },
     {
-      "name": "http://172.20.10.2:3000/api/filmes/4",
+      "name": "verNovaListaCompleta",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -327,48 +334,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "http://172.20.10.2:3000/api/filmes/4",
-          "protocol": "http",
-          "host": [
-            "172",
-            "20",
-            "10",
-            "2"
-          ],
-          "port": "3000",
-          "path": [
-            "api",
-            "filmes",
-            "4"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://172.20.10.2:3000/api/filmes",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"tempoEmMinutos\": 93 \n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
+          "raw": "{\n    \"nome\": \"Hércules\",\n    \"tempoEmMinutos\": 93,\n    \"genero\": \"Animação\",\n    \"classificacaoIndicativa\": 0\n}"
         },
         "url": {
           "raw": "http://172.20.10.2:3000/api/filmes",
